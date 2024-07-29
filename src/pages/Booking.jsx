@@ -1,3 +1,9 @@
+import CenterWrapper from "./CenterWrapper";
+
 export default function Booking() {
-  return <h1>MY Booking</h1>;
+  return (
+    <CenterWrapper>
+      <h1>MY Booking</h1>
+    </CenterWrapper>
+  );
 }

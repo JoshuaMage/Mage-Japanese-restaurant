@@ -1,4 +1,9 @@
+import CenterWrapper from "./CenterWrapper";
+
 export default function Menu() {
-    return <h1>MY Menu</h1>;
-  }
-  
+  return (
+    <CenterWrapper>
+      <h1>MY Menu</h1>
+    </CenterWrapper>
+  );
+}

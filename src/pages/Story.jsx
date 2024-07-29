@@ -1,4 +1,9 @@
+import CenterWrapper from "./CenterWrapper";
+
 export default function Story() {
-    return <h1>MY Story</h1>;
-  }
-  
+  return (
+    <CenterWrapper>
+      <h1>MY Story</h1>
+    </CenterWrapper>
+  );
+}

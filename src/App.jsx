@@ -2,7 +2,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import "./App.css";
 import Rootlayout from "./component/Rootlayout";
-import Homepage from "./pages/Home";
+import Homepage from "./pages/Home.jsx";
 import Menu from "./pages/Menu";
 import Booking from "./pages/Booking";
 import Guests from "./pages/Guests";
