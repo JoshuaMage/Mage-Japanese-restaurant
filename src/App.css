@@ -1,0 +1,27 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #201b19
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EDE9D5;
+    margin: 0;
+    overflow-X: hidden;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+}

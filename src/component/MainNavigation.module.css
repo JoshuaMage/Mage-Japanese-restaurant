@@ -1,0 +1,22 @@
+/* src/components/MainNavigation.module.css */
+.active {
+  font-weight: bold;
+  color: #B43F3F;
+}
+
+
+.ul {
+  display: grid;
+  grid-template-columns: .5fr .5fr .5fr 4fr .5fr .5fr;
+  text-align: center;
+  justify-content: center;
+  list-style-type: none;
+  padding: 3% 6%;
+}
+
+.link {
+  text-decoration: none;
+  font-family: 'Satoshi', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
