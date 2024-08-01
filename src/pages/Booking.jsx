@@ -1,9 +1,21 @@
 import CenterWrapper from "./CenterWrapper";
+import HeadTitle from "../component/HeadTitle";
+import "../css/headtitle.css";
 
 export default function Booking() {
   return (
     <CenterWrapper>
-      <h1>MY Booking</h1>
+      <HeadTitle>
+        <p className="head-title-text">ブッキング</p>
+        <div className="head-image">
+          <img
+            src="https://images6.alphacoders.com/134/thumbbig-1346791.webp"
+            alt="Solo Leveling"
+            className="head-image"
+          />
+        </div>
+        <p className="head-title-text">メイジ</p>
+      </HeadTitle>
     </CenterWrapper>
   );
 }

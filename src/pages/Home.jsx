@@ -10,6 +10,7 @@ import {
 import FourtSectionTwo from "../component/showImg.jsx";
 import CenterWrapper from "./CenterWrapper.jsx";
 import VideoSection from "../component/VideoSection.jsx";
+import Footer from "./Footer.jsx";
 
 const ServiceSection = ({ title, description, button, link }) => {
   const ref = useRef();
@@ -242,10 +243,7 @@ export default function Homepage() {
         </section>
       </div>
 
-      <footer>
-        <h3>MAGE 2024@</h3>
-        <h4>A non-profit project, created as part of training</h4>
-      </footer>
+      <Footer />
     </CenterWrapper>
   );
 }

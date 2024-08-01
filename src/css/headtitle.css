@@ -1,0 +1,33 @@
+/* headtitle.css */
+.head-title-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.head-image {
+    border: 2px solid black;
+    background-color: red;
+    width: 600px; /* Ensures the image fits within the grid cell */
+    height: 200px; /* Ensures the image fits within the grid cell */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide overflow */
+}
+
+.head-image img {
+    max-width: 100%; /* Fit image within container */
+    max-height: 100%; /* Fit image within container */
+    object-fit: cover; /* Maintain aspect ratio while covering container */
+}
+
+.head-title-text {
+    font-size: 6rem;
+    font-weight: 700;
+    font-family: monospace;
+}
