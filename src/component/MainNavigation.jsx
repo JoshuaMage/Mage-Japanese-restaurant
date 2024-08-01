@@ -7,9 +7,9 @@ export default function MainNavigation() {
     <header>
       <nav>
         <ul className={classes.ul}>
-          <li className="menu">
+          <li>
             <NavLink
-              to="/MageRestaurant/Menu"
+              to="/Menu"
               className={({ isActive }) =>
                 `${classes.link} ${isActive ? classes.active : ""}`
               }
@@ -17,9 +17,9 @@ export default function MainNavigation() {
               Menu
             </NavLink>
           </li>
-          <li className="menu">
+          <li>
             <NavLink
-              to="/MageRestaurant/Booking"
+              to="/Booking"
               className={({ isActive }) =>
                 `${classes.link} ${isActive ? classes.active : ""}`
               }
@@ -27,9 +27,9 @@ export default function MainNavigation() {
               Booking
             </NavLink>
           </li>
-          <li className="menu">
+          <li>
             <NavLink
-              to="/MageRestaurant/Guests"
+              to="/Guests"
               className={({ isActive }) =>
                 `${classes.link} ${isActive ? classes.active : ""}`
               }
@@ -39,18 +39,19 @@ export default function MainNavigation() {
           </li>
           <li>
             <NavLink
-              to="/MageRestaurant"
+              to="/"
               className={({ isActive }) =>
                 `${classes.link} ${isActive ? classes.active : ""}`
               }
               end
             >
-              The Mage <br /> <span>Japanese Restaurant</span>
+              <span style={{ fontSize: "30px" }}> THE MAGE</span> <br />{" "}
+              Japanese Restaurant
             </NavLink>
           </li>
-          <li className="menu">
+          <li>
             <NavLink
-              to="/MageRestaurant/Story"
+              to="/Story"
               className={({ isActive }) =>
                 `${classes.link} ${isActive ? classes.active : ""}`
               }
@@ -58,9 +59,9 @@ export default function MainNavigation() {
               Story
             </NavLink>
           </li>
-          <li className="menu">
+          <li>
             <NavLink
-              to="/MageRestaurant/Contact"
+              to="/Contact"
               className={({ isActive }) =>
                 `${classes.link} ${isActive ? classes.active : ""}`
               }

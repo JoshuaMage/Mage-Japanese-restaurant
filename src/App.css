@@ -1,24 +1,29 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
+  margin: 0;
+  padding: 0;
+  color: #151515;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #EDE9D5;
+  overflow-x: hidden;
+  /* Corrected property name */
+
+
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
   body {
-    font-family: Arial, sans-serif;
-    background-color: #EDE9D5;
-    overflow-x: hidden; /* Corrected property name */
+    padding: 10px;
   }
-  
-  /* Responsive design */
-  @media (max-width: 768px) {
-    body {
-      padding: 10px;
-    }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
   }
-  
-  @media (max-width: 480px) {
-    body {
-      font-size: 14px;
-    }
-  }
-  
+}

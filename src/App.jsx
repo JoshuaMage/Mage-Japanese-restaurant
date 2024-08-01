@@ -11,7 +11,7 @@ import Contact from "./pages/Contact"
 
 const router = createBrowserRouter([
   {
-    path: "/MageRestaurant",
+    path: "/",
     element: <Rootlayout />,
     children: [
       { index: true, element: <Homepage /> },
