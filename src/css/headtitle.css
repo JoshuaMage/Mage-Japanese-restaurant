@@ -7,27 +7,60 @@
     height: 100%;
     width: 100%;
     text-align: center;
+    overflow-x: hidden;
 }
 
 .head-image {
     border: 2px solid black;
-    background-color: red;
-    width: 600px; /* Ensures the image fits within the grid cell */
-    height: 200px; /* Ensures the image fits within the grid cell */
+    width: 600px;
+    /* Ensures the image fits within the grid cell */
+    height: 200px;
+    /* Ensures the image fits within the grid cell */
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Hide overflow */
+
+    /* Hide overflow */
 }
 
 .head-image img {
-    max-width: 100%; /* Fit image within container */
-    max-height: 100%; /* Fit image within container */
-    object-fit: cover; /* Maintain aspect ratio while covering container */
+    max-width: 100%;
+    /* Fit image within container */
+    max-height: 100%;
+    /* Fit image within container */
+    object-fit: cover;
+    /* Maintain aspect ratio while covering container */
 }
 
-.head-title-text {
+.head-title-text-right {
     font-size: 6rem;
     font-weight: 700;
     font-family: monospace;
+    animation: head-title-text-right  4s forwards;
 }
+
+@keyframes head-title-text-right  {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(200px);
+    }
+}
+
+.head-title-text-left {
+    font-size: 6rem;
+    font-weight: 700;
+    font-family: monospace;
+    animation: head-title-text-left 4s forwards;
+}
+
+@keyframes head-title-text-left {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-300px);
+    }
+}
+

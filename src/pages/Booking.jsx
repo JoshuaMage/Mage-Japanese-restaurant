@@ -6,7 +6,7 @@ export default function Booking() {
   return (
     <CenterWrapper>
       <HeadTitle>
-        <p className="head-title-text">ブッキング</p>
+        <p className="head-title-text-right" >ブッキング</p>
         <div className="head-image">
           <img
             src="https://images6.alphacoders.com/134/thumbbig-1346791.webp"
@@ -14,7 +14,7 @@ export default function Booking() {
             className="head-image"
           />
         </div>
-        <p className="head-title-text">メイジ</p>
+        <p className="head-title-text-left">メイジ</p>
       </HeadTitle>
     </CenterWrapper>
   );
