@@ -1,17 +1,60 @@
+import Bfast1 from "../image/menu-image/1-img.png";
+import Bfast2 from "../image/menu-image/2-img.png";
+import Bfast3 from "../image/menu-image/3-img.png";
+import hoverB1 from "../image/menu-hover-image/hover1.jpg"
+import hoverB2 from "../image/menu-hover-image/hover2.jpg"
+import hoverB3 from "../image/menu-hover-image/hover3.jpg"
+
+import starter1 from "../image/menu-image/4-img.png";
+import starter2 from "../image/menu-image/5-img.png";
+import starter3 from "../image/menu-image/6-img.png";
+import hoverS1 from "../image/menu-hover-image/hover4.png"
+import hoverS2 from "../image/menu-hover-image/hover5.jpg"
+import hoverS3 from "../image/menu-hover-image/hover6.jpg"
+
+import ramen1 from "../image/menu-image/7-img.webp";
+import ramen2 from "../image/menu-image/8-img.webp";
+import ramen3 from "../image/menu-image/9-img.webp";
+import hoverR1 from "../image/menu-hover-image/hover7.png"
+import hoverR2 from "../image/menu-hover-image/hover8.jpg"
+import hoverR3 from "../image/menu-hover-image/hover9.png"
+
+import noodles1 from "../image/menu-image/10-img.png";
+import noodles2 from "../image/menu-image/11-img.png";
+import noodles3 from "../image/menu-image/12-img.png";
+import hoverN1 from "../image/menu-hover-image/hover10.webp"
+import hoverN2 from "../image/menu-hover-image/hover11.png"
+import hoverN3 from "../image/menu-hover-image/hover12.png"
+
+import hotdishes1 from "../image/menu-image/13-img.webp";
+import hotdishes2 from "../image/menu-image/14-img.png";
+import hotdishes3 from "../image/menu-image/15-img.png";
+import hoverH1 from "../image/menu-hover-image/hover13.jpeg"
+import hoverH2 from "../image/menu-hover-image/hover14.jpg"
+import hoverH3 from "../image/menu-hover-image/hover15.jpg"
+
+import desserts1 from "../image/menu-image/16-img.png";
+import desserts2 from "../image/menu-image/17-img.png";
+import desserts3 from "../image/menu-image/18-img.png";
+import hoverD1 from "../image/menu-hover-image/hover16.jpg"
+import hoverD2 from "../image/menu-hover-image/hover17.jpg"
+import hoverD3 from "../image/menu-hover-image/hover18.jpg"
+
 export const MENUPRODUCTS = {
   BreakFast: [
     {
       id: "1",
-      img: "https://www.pngall.com/wp-content/uploads/2018/04/Omelet-PNG-HD.png",
+      img: Bfast1,
+      hoverimg: hoverB1,
       product: "TAKAO OMURAISU FROM THE GARDEN OF WORDS",
       description:
         "Fried rice, scrambled eggs, eel, ketchup, romano lettuce, cherry tomatoes and gomadare sauce",
       cart: "$10.50 - ADD TO CART",
     },
-
     {
       id: "2",
-      img: "https://www.pngall.com/wp-content/uploads/5/Buttermilk-Pancake-PNG-Free-Download.png",
+      img: Bfast2,
+      hoverimg: hoverB2,
       product: "TAKI SOUFFLÉ PANCAKES FROM YOUR NAME",
       description:
         "Japanese air pancakes, chocolate sauce, strawberry cream sauce",
@@ -19,7 +62,8 @@ export const MENUPRODUCTS = {
     },
     {
       id: "3",
-      img: "https://www.pngall.com/wp-content/uploads/10/Porridge-PNG-Background.png",
+      img: Bfast3,
+      hoverimg: hoverB3,
       product: "OKAYU FROM KIKI'S DELIVERY SERVICE",
       description: "Japanese rice porridge, umeboshi, scallion, sesame seeds",
       cart: "$6.20 - ADD TO CART",
@@ -29,7 +73,8 @@ export const MENUPRODUCTS = {
   Starters: [
     {
       id: "1",
-      img: "https://64.media.tumblr.com/c63c02e6921f37df55646cbffcb30d46/7c113d08bc5ec8e0-06/s540x810/a7fc82eef5643cdf0b15817f87a5a2649bb64b13.png",
+      img: starter1,
+      hoverimg: hoverS1,
       product: "YUKIHIRA ONIGIRI FROM SHOKUGEKI NO SOMA",
       description:
         "Rice, salmon, cream cheese, furikake / rice, crab, cream cheese, yam powder / rice, tuna, mentaiko sauce, matcha and soy sauce",
@@ -38,7 +83,8 @@ export const MENUPRODUCTS = {
 
     {
       id: "2",
-      img: "https://png.pngtree.com/png-vector/20240312/ourmid/pngtree-takoyaki-original-sauce-png-image_11928548.png",
+      img: starter2,
+      hoverimg: hoverS2,
       product: "KORO TAKOYAKI FROM ASSASSINATION CLASS",
       description:
         "Fish broth dough, octopus / shrimp / eel, takoyaki sauce, tuna shavings",
@@ -46,7 +92,8 @@ export const MENUPRODUCTS = {
     },
     {
       id: "3",
-      img: "https://www.pngplay.com/wp-content/uploads/12/Dumplings-Background-PNG.png",
+      img: starter3,
+      hoverimg: hoverS3,
       product: "CAYMAN GYOZA FROM DOROHEDORO",
       description:
         "Japanese fried dumplings with salmon, pork and chicken, cream sauce, green onions",
@@ -57,7 +104,8 @@ export const MENUPRODUCTS = {
   Ramen: [
     {
       id: "1",
-      img: "https://cafe.jipan.com.ph/cdn/shop/products/chashu1_503x503.png?v=1600679228",
+      img: ramen1,
+      hoverimg: hoverR1,
       product: "UZUMAKI RAMEN FROM NARUTO",
       description:
         "Chashu pork, ramen noodles, miso motodare, pork broth, adzitama egg, shriracha, soybean sprouts, tsukudani kombu, green onions, sesame seeds, nori seaweed",
@@ -66,7 +114,8 @@ export const MENUPRODUCTS = {
 
     {
       id: "2",
-      img: "https://static.vecteezy.com/system/resources/previews/036/083/959/non_2x/ai-generated-delicious-ramen-isolated-on-transparent-background-free-png.png",
+      img: ramen2,
+      hoverimg: hoverR2,
       product: "SENKU RAMEN FROM DR. STONE",
       description:
         "SENKU RAMEN FROM DR. STONEChicken fillet, ramen noodles, soy broth, miso, pepper paste, shiitake, spicy corn, adzitama egg, green onion, sesame oil, sesame",
@@ -74,7 +123,8 @@ export const MENUPRODUCTS = {
     },
     {
       id: "3",
-      img: "https://static.vecteezy.com/system/resources/previews/027/297/737/original/asian-noodle-soup-ramen-with-chicken-vegetables-and-egg-in-black-bowl-isolated-on-white-transparent-background-ai-generate-png.png",
+      img: ramen3,
+      hoverimg: hoverR3,
       product: "GOKU RAMEN FROM DRAGON BALL",
       description:
         "GOKU RAMEN FROM DRAGON BALLBeef, ramen noodles, beef broth, adzitama egg, tsukudani kombu, green onions, pickled bamboo, miso motodare, sesame oil, sesame",
@@ -85,7 +135,8 @@ export const MENUPRODUCTS = {
   Noodles: [
     {
       id: "1",
-      img: "https://www.nasoya.com/wp-content/uploads/2020/11/Original-Udon-Noodle-Teriyaki_FinalPng.png",
+      img: noodles1,
+      hoverimg: hoverN1,
       product: "TANJIRO UDON FROM DEMON SLAYER",
       description:
         "TANJIRO UDON FROM DEMON SLAYERUdon noodles, marbled beef, beef broth, shimiji mushrooms, adzitama egg, tofu, green onions, sesame, shriracha, soybean sprouts, tsukudani kombu, green onions, sesame seeds, nori seaweed",
@@ -94,7 +145,8 @@ export const MENUPRODUCTS = {
 
     {
       id: "2",
-      img: "https://static.vecteezy.com/system/resources/previews/026/774/053/non_2x/soba-with-ai-generated-free-png.png",
+      img: noodles2,
+      hoverimg: hoverN2,
       product: "KANDA YAKISOBA FROM D.GRAY-MAN",
       description:
         "Egg soba noodles, muer and shimiji mushrooms, leeks, shiitake, bok choy, crispy onions, edamame, sesame, microgreens, yaki udon sauce",
@@ -102,17 +154,20 @@ export const MENUPRODUCTS = {
     },
     {
       id: "3",
-      img: "https://i.pinimg.com/originals/f3/e0/07/f3e0074899c80cb6744539257921cbf8.png",
+      img: noodles3,
+      hoverimg:hoverN3,
       product: "NENE SOBA FROM SHOKUGEKI NO SOMA",
       description:
         "Sarashina soba, kakiage sakura shrimp, dashi, soy sauce, mirin",
       cart: "$23- ADD TO CART",
     },
   ],
+
   Hotdishes: [
     {
       id: "1",
-      img: "https://www.thebeefstation.com.sg/wp-content/uploads/2018/04/beef-brisket-noodles.png",
+      img: hotdishes1,
+      hoverimg: hoverH1,
       product: "YORIKO NIKUJAGA FROM TOKYO GHOUL",
       description:
         "Pork brisket, shirataki noodles, onions, potatoes, peas, carrots, dried shiitake mushrooms, green beans, sake, soy sauced",
@@ -121,7 +176,8 @@ export const MENUPRODUCTS = {
 
     {
       id: "2",
-      img: "https://hometaste.my/wp-content/uploads/2020/06/dipdip-blackpepper-chicken-white-rice.png",
+      img: hotdishes2,
+      hoverimg: hoverH2,
       product: "YURI KATSUDON FROM YURI ON ICE",
       description:
         "Breaded pork tonkatsu chop, rice, peking cabbage with yuzu dressing, soy sauce",
@@ -129,17 +185,20 @@ export const MENUPRODUCTS = {
     },
     {
       id: "3",
-      img: "https://images.aws.nestle.recipes/original/245593a1ffc4a490ac15ec095951c23d_2797b94663f5c997588d8ccf8472e399_japanese_curry_with_hg_schnitzel.png",
+      img: hotdishes3,
+      hoverimg: hoverH3,
       product: "SATORU KARE-RAISU FROM ERASED",
       description:
         "Marble beef, rice, potatoes, carrots, onions, curry sauce, ground ginger",
       cart: "$7.10 - ADD TO CART",
     },
   ],
+
   Desserts: [
     {
       id: "1",
-      img: "https://www.pngarts.com/files/1/Meringue-PNG-Transparent-Image.png",
+      img: desserts1,
+      hoverimg: hoverD1,
       product: "SEBASTIAN'S LEMON PIE FROM BLACK BUTLERL",
       description:
         "Sweet dough with sugar and almonds powder, lemon cream, french meringue",
@@ -148,7 +207,8 @@ export const MENUPRODUCTS = {
 
     {
       id: "2",
-      img: "https://png.pngtree.com/png-vector/20240315/ourmid/pngtree-taiyaki-japanese-fish-shaped-cake-japanese-street-food-dessert-png-image_11970408.png",
+      img: desserts2,
+      hoverimg: hoverD2,
       product: "DEKU TAIYAKI FROM MY HERO ACADEMIA",
       description:
         "Japanese fish waffle in flavors: vanilla-raspberry / banana-nutella / raspberry-basil /anko jam made of adzuki beans",
@@ -156,7 +216,8 @@ export const MENUPRODUCTS = {
     },
     {
       id: "3",
-      img: "https://static.vecteezy.com/system/resources/previews/018/743/198/large_2x/3d-illustration-of-asian-food-dango-japanese-food-free-png.png",
+      img: desserts3,
+      hoverimg: hoverD3,
       product: "ITACHI DANGO FROM NARUTO",
       description:
         "Colored rice flour balls with soy sauce, sugar and starch syrup",

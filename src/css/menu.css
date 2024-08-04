@@ -1,62 +1,191 @@
-.mage-menu {
-    display: grid;
-    grid-template-rows: repeat(5, 1fr);
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    gap: 3%;
-    margin-top: 10%;
 
+/* Container Styles */
+.mage-menu {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 10%;
 }
 
 .mage-menu .menu {
-    display: grid;
-    grid-template-rows: 15% 1fr;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
 }
 
+/* Heading Styles */
 .mage-menu .menu h2 {
-    text-align: center;
-    font-size: 4rem;
-    font-family: cursive;
-    width: 70%;
+  text-align: center;
+  font-size: 4rem;
+  font-family: cursive;
+  width: 60%;
+  margin-bottom: 1rem;
 }
 
 .mage-menu .menu section {
-    display: flex;
-    gap: 1%;
-    height: 50rem;
-    justify-content: center;
-
+  display: flex;
+  gap: 1rem;
+  height: 50rem;
+  justify-content: center;
 }
 
+/* Menu Item Styles */
 .mage-menu .menu .menu-item {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #ccc;
-    width: 25%;
-
-    background-color: #151515;
-
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  width: 25%;
+  background-color: #151515;
+  height: 100%;
 }
 
-.menu-img {
-    width: 100%;
-    height: 27rem;
-
+/* Image Container Styles */
+.img-container {
+  position: relative;
+  width: 100%;
+  height: 27rem;
+  /* Ensure the height matches the image height */
+  overflow: hidden;
+  /* Hide any overflow to ensure clean transitions */
 }
 
+.menu-img,
+.menu-img-hover {
+  position: absolute;
+  /* Absolutely position the images to overlap them */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.menu-img-hover {
+  opacity: 0;
+}
+
+.img-container:hover .menu-img-hover {
+  opacity: 1;
+}
+
+.img-container:hover .menu-img {
+  opacity: 0;
+}
+
+/* Text Styles */
 .menu-product {
-    color: #FCF8F3;
-    padding: 0 5%;
-    justify-content: center;
+  color: #FCF8F3;
+  padding: 0 5%;
+  justify-content: center;
+  font-size: 2rem;
 }
 
 .menu-description {
-    color: #FCF8F3;
-    padding: 0 5%;
-    justify-content: center;
+  color: #FCF8F3;
+  padding: 0 5%;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
+/* Button Styles */
+.menu-cart {
+  display: grid;
+  width: 80%;
+  padding: 4% 6%;
+  border-radius: 10px;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 1px;
+  justify-self: center;
+  /* Center horizontally */
+  align-self: center;
+  /* Center vertically */
+}
+
+.menu-cart:hover {
+  background-color: #B43F3F;
+  color: white;
+  border-color: transparent;
+}
+
+/* Third Div Menu Styles */
+.third-div-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
+  border-bottom: 2px solid black;
+  gap: 0;
+}
+
+
+
+.third-div-menu section {
+  flex: 1;
+  text-align: center;
+}
+
+
+
+.third-div-menu img {
+  position: relative;
+  top: 4px;
+  max-width: 100%;
+  height: 40rem;
+}
+
+
+.obito-image {
+  animation: obito-image  10s infinite alternate;
+}
+
+.sasuke-image {
+  animation: sasuke-image  10s infinite alternate;
+}
+
+
+@keyframes obito-image {
+  0% {
+      transform: translateX(-300px);
+      /* Start position */
+  }
+
+  100% {
+      transform: translateX(50px);
+      /* End position */
+  }
+}
+
+@keyframes sasuke-image  {
+  0% {
+      transform: translateX(300px);
+      /* Start position */
+  }
+
+  100% {
+      transform: translateX(50px);
+      /* End position */
+  }
+}
+
+.third-div-menu h3 {
+  font-size: 2rem;
+  font-family: fantasy;
+  margin: 1rem 0;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+
+
+.third-div-menu p {
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 1rem;
+  font-weight: 100;
+}
