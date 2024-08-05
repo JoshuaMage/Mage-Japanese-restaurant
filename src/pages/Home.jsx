@@ -207,7 +207,7 @@ export default function Homepage() {
             placeholder="YOUR NAME"
             className="input-section"
           />
-          <button className="information-button">JOIN US</button>
+          <button className="information-button">JOIN-US</button>
         </section>
 
         <section>

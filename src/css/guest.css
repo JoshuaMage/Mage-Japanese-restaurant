@@ -1,0 +1,104 @@
+/* General container for guest section */
+.guest-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.guest-firstContainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 0 10rem;
+}
+
+.guest-section section h3 {
+    font-size: 5rem;
+    font-family: fantasy;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.guest-section section h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    text-size-adjust: auto;
+}
+
+.guest-section section p {
+    margin: 1rem 0;
+}
+
+.guest-section section h5 {
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.guest-secondContainer {
+    display: flex;
+    grid-template-columns: 1fr;
+    width: auto;
+    gap: 2rem;
+    margin: 5rem auto;
+    animation: guest 30s linear infinite;
+}
+
+
+
+.guest-img-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #A0153E;
+    border: 2px solid black;
+    height: fit-content;
+    align-items: center;
+    justify-items: center;
+    padding: 0 3rem;
+
+}
+
+@keyframes guest {
+    0% {
+        transform: translateX(-51%);
+    }
+
+    100% {
+        transform: translateX(1%);
+    }
+}
+
+
+.guest-img-container section {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.guest-img-container h2 {
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: -1px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.guest-img-container p {
+    font-size: 1rem;
+    letter-spacing: -1px;
+    color: white;
+    width: 20rem;
+    padding: 0;
+}
+
+
+
+.guest-image {
+    position: relative;
+    left: 50px;
+    height: 40rem;
+    width: 20rem;
+}

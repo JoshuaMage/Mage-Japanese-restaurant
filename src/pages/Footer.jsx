@@ -31,7 +31,7 @@ export default function Footer() {
 
       <section className="footer-section">
       <h3>MAGE 2024@</h3>
-      <h4>A non-profit project, created as part of training</h4>
+      <h4>A non-profit project, created as part of training. Design by Joshua Del Rosario</h4>
       </section>
     </footer>
   );

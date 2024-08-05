@@ -1,0 +1,149 @@
+.booking {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    margin-top: 1rem;
+    overflow: visible;
+}
+
+.booking-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5rem;
+    border-bottom: 5px solid black;
+}
+
+.booking-section img {
+    height: 60rem;
+    width: 35rem;
+}
+
+.reservation-form {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: .5fr 1fr .5fr;
+}
+
+.reservation-details {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0 4rem;
+}
+
+.reservation-details h3 {
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+.reservation-details p {
+    margin-top: 1rem;
+    font-size: .9rem;
+    font-weight: 300;
+    font-family: monospace;
+}
+
+.reservation-details span {
+    font-size: .9rem;
+    font-weight: 300;
+    font-family: monospace;
+}
+
+.form-input {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 1rem;
+    padding: 1rem 3.5rem;
+
+}
+
+.form-input input {
+    font-family: monospace;
+    font-size: 1rem;
+    font-weight: 800;
+    border: 2px solid black;
+    text-align: start;
+    padding-left: 1rem;
+}
+
+
+
+.form-checkbox {
+    padding: 0 4rem;
+    display: grid;
+    grid-template-rows: 1fr .5fr;
+    margin-bottom: 4rem;
+}
+
+.form-checkbox section {
+    display: flex;
+    align-items: center;
+}
+
+.form-checkbox section input {
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    border: 5px solid black;
+}
+
+.form-checkbox section p {
+    padding: 1rem;
+    font-family: monospace;
+    font-weight: 800
+}
+
+.form-button {
+    border-radius: 10px;
+    width: 80%;
+    justify-self: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.form-button:hover {
+    background-color: #B43F3F;
+    color: white;
+    border-color: transparent;
+}
+
+.frieren-image {    
+    overflow: auto;
+    padding-bottom: 30rem;
+     animation: frieren-image 5s infinite alternate;
+}
+
+@keyframes frieren-image  {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25% {
+        left:   0%;
+        top: 0;
+        transform: translateX(-10%);
+    }
+    50% {
+        left: 10%;
+        top: 10%;
+        transform: translate(1%, -10%);
+    }
+
+}
+
+.gojo-image{
+    animation: gojo-image 5s infinite alternate;
+}
+
+@keyframes gojo-image {
+    0% {
+        transform: translateY(30rem);
+    }
+    100% {
+        transform: translateY(20rem);
+    }
+}

@@ -2,8 +2,11 @@
   margin: 0;
   padding: 0;
   color: #151515;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+  font-family: monospace;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  
 }
 
 body {
