@@ -1,9 +1,19 @@
 /* General container for guest section */
+.booking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
 .guest-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 5rem;
-    width: 100%;
+
 }
 
 .guest-firstContainer {
@@ -38,7 +48,6 @@
 
 .guest-secondContainer {
     display: flex;
-    grid-template-columns: 1fr;
     width: auto;
     gap: 2rem;
     margin: 5rem auto;
@@ -46,6 +55,15 @@
 }
 
 
+@keyframes guest {
+    0% {
+        transform: translateX(-38%);
+    }
+
+    100% {
+        transform: translateX(1%);
+    }
+}
 
 .guest-img-container {
     position: relative;
@@ -58,16 +76,6 @@
     justify-items: center;
     padding: 0 3rem;
 
-}
-
-@keyframes guest {
-    0% {
-        transform: translateX(-51%);
-    }
-
-    100% {
-        transform: translateX(1%);
-    }
 }
 
 
@@ -101,4 +109,198 @@
     left: 50px;
     height: 40rem;
     width: 20rem;
+}
+
+
+.guest-thirdContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    border-bottom: 2px solid black;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+.guest-thirdContainer img {
+    position: relative;
+    top: 3.5px;
+    height: 50rem;
+    transform: translateX(8rem);
+    animation: girl-anime 4s ease;
+}
+
+@keyframes girl-anime {
+    0% {
+        transform: translateX(-30rem);
+    }
+
+    100% {
+        transform: translateX(150px);
+    }
+}
+
+.guest-voucher {
+    display: grid;
+    grid-template-rows: 1fr 1fr .2fr;
+    width: 80%;
+}
+
+.guest-thirdContainer h2 {
+    font-size: 4rem;
+    letter-spacing: -3px;
+    margin-bottom: 4rem;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: start;
+}
+
+.guest-thirdContainer p {
+    font-size: 1.4rem;
+    text-align: start;
+}
+
+.guest-thirdContainer button {
+    padding: 1rem 4rem;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    background-color: black;
+    color: white;
+    width: 50%;
+    margin-top: 2rem;
+}
+
+.guest-thirdContainer button:hover {
+    background-color: #B43F3F;
+    color: white;
+}
+
+.guest-fourtContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.guest-fourtSection {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+}
+
+.guest-fourtSection img {
+    height: 60rem;
+}
+
+.guest-fourtDetails {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.guest-fourtDetails h3 {
+    margin-bottom: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    width: 100%;
+    letter-spacing: -1px;
+}
+
+.guest-fourtDetails p {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.itachi-img {
+    transform: translateY(-80px);
+}
+
+.mountain {
+    background-image: url('../image/guest-image/mountain.svg');
+    background-size: cover;
+    background-position: center;
+    transform: translateY(-400px);
+}
+
+.guest-dishes {
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    padding: 1rem 2rem;
+    grid-area: 2rem;
+    gap: 1.2rem;
+    transform: translateY(350px);
+}
+
+
+.guest-dishes li {
+    list-style-type: none;
+    background-color: #A0153E;
+    padding: 2rem 2rem;
+    border: 2px solid black;
+}
+
+.guest-dishes h2 {
+    color: white;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+    text-align: start;
+    margin-bottom: 1rem;
+}
+
+.guest-dishes p {
+    font-size: 1rem;
+    letter-spacing: -1px;
+    color: white;
+    text-align: start;
+}
+
+.guest-fifthContainer {
+    display: grid;
+    grid-template-rows: auto;
+    padding: 0 4rem;
+}
+
+.guest-fifthContainer h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: -1px;
+    margin-bottom: 1rem;
+}
+
+.guest-fifthContainer button {
+    padding: 1rem 4rem;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    background-color: black;
+    color: white;
+    margin: 1rem;
+
+}
+
+.guest-fifthContainer button:hover {
+    background-color: #B43F3F;
+    color: white;
+}
+
+.guest-fifthContainer img {
+    height: 700px;
+    animation: luffyboat 10s ease-in-out forwards;
+}
+
+@keyframes luffyboat {
+    0% {
+        transform: translateX(40rem);
+    }
+
+    100% {
+        transform: translateX(-40rem);
+    }
 }

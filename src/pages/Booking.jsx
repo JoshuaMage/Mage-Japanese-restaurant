@@ -69,10 +69,12 @@ export default function Booking() {
           <section>
             <img src={gojo} alt="luffy-songod-nikka" className="gojo-image" />
           </section>
+         
         </div>
+        <Footer />
       </div>
 
-      <Footer />
+    
     </CenterWrapper>
   );
 }

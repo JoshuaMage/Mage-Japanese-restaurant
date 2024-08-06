@@ -1,9 +1,8 @@
 .booking {
     padding: 0;
     margin: 0;
-    height: 100%;
+    height: fit-content;
     margin-top: 1rem;
-    overflow: visible;
 }
 
 .booking-section {
@@ -111,22 +110,24 @@
     border-color: transparent;
 }
 
-.frieren-image {    
+.frieren-image {
     overflow: auto;
     padding-bottom: 30rem;
-     animation: frieren-image 5s infinite alternate;
+    animation: frieren-image 5s infinite alternate;
 }
 
-@keyframes frieren-image  {
+@keyframes frieren-image {
     0% {
         left: 0;
         top: 0;
     }
+
     25% {
-        left:   0%;
+        left: 0%;
         top: 0;
         transform: translateX(-10%);
     }
+
     50% {
         left: 10%;
         top: 10%;
@@ -135,7 +136,7 @@
 
 }
 
-.gojo-image{
+.gojo-image {
     animation: gojo-image 5s infinite alternate;
 }
 
@@ -143,6 +144,7 @@
     0% {
         transform: translateY(30rem);
     }
+
     100% {
         transform: translateY(20rem);
     }

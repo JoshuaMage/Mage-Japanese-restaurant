@@ -6,7 +6,7 @@ export default function Booking() {
   return (
     <CenterWrapper>
       <HeadTitle>
-        <p className="head-title-text-right">ゲスト</p>
+        <p className="head-title-text-right" style={{ translate: "80px"}}>ゲスト</p>
         <div className="head-image">
           <img
             src="https://artfiles.alphacoders.com/159/thumb-800-159424.webp"

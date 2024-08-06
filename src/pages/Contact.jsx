@@ -8,7 +8,7 @@ export default function Menu() {
       <HeadTitle>
         <p
           className="head-title-text-right"
-          
+          style={{ translate: "30px"}}
         >
           メニュー
         </p>

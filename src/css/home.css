@@ -321,11 +321,10 @@
 .contact-section {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
-    height: 50vh;
     justify-items: center; /* Center items horizontally within the grid */
     align-items: center; /* Center items vertically within the grid */
     text-align: center; /* Center text within each section */
-    margin: 0 auto; /* Center the grid container horizontally within its parent */
+    height: 20rem;
 }
 
 
@@ -349,11 +348,11 @@
 
 .footer {
     width: 100%;
+    margin-top: 5rem;
 }
 .footer-section{
     padding: 1rem 0;
     background-color: #021526;
-    
 }
 
 .footer-section h3 {
