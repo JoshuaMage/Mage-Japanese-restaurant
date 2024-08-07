@@ -1,0 +1,48 @@
+.story-firstContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5rem;
+}
+
+.story-firstContainer section {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.story-firstContainer .story-firstSection {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.story-firstSection h3 {
+    text-align: start;
+    font-size: 6rem;
+    font-family: fantasy;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    letter-spacing: -2px;
+}
+
+.story-firstSection h4 {
+    text-align: start;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    text-size-adjust: auto;
+    letter-spacing: -2px;
+}
+
+.story-firstContainer section p {
+    margin: 1rem 0;
+    font-weight: 1.1rem;
+    font-weight: 500;
+    width: 60%;
+    text-align: start;
+}
+
+.story-firstContainer section h5 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    text-align: start;
+}

@@ -24,8 +24,11 @@
 }
 
 .top-section h2 {
-    margin-top: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1.5rem;
     font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: -2px;
 }
 
 .top-section h3 {
